@@ -1,0 +1,20 @@
+<nav class="navbar">
+    <h1><%= link_to "FreeMe.", root_path, class: "logo" %></h1>
+    <ul class="nav-links">
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to "profile", user_path(current_user) %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "showcase", user_showcase_path(current_user), target: :_blank %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Login", new_user_session_path %>
+        </li>
+      <% end %>
+    </ul>
+</nav>

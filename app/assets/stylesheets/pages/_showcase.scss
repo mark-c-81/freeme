@@ -1,0 +1,306 @@
+/* below is the container for all page & components */
+
+.sc-main-container {
+	width:  100%;
+	margin:  0 auto;
+	background: #FFFFFF;
+	padding: 0 4rem 2rem 4rem;
+	/*display:  flex;*/
+}
+
+/* below is the about modal  */
+
+#sc-modal-header {
+  background-color: #FFFFFF;
+}
+
+#sc-modal-header h5 {
+  color: #24292e;
+}
+
+#sc-modal-body {
+  background-color: #FFFFFF;
+}
+
+/* below is the banner profile  */
+
+.sc-banner-container {
+	height: 400px;
+	background-color: #FFFFFF;
+	display: flex;
+	margin: 2rem 4rem 0 4rem;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+.sc-banner-title {
+	height: 300px;
+	width: 600px;
+	background-color: #FFFFFF;
+	padding-right: 1rem;
+}
+
+.sc-banner-title h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 68px;
+}
+
+.sc-banner-title h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: slategray;
+	margin-top: 2rem;
+}
+
+.sc-banner-title h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	color: lightgrey;
+	margin-top: 2rem;
+}
+
+.sc-profile-pic {
+	height: 300px;
+	width:  300px;
+	object-fit: cover;
+	border-radius: 8px 8px 50px 8px;
+}
+
+/* below is the arrow navigation */
+
+.sc-arrow-nav {
+	margin: 0 4rem 2rem 4rem;
+	width: 25px;
+	height: 25px;
+	opacity: 0.7;
+	display: flex;
+	justify-content: right;
+}
+
+
+/* below is the container header skills / projects / exp */
+.sc-cont-header {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: slategray;
+	font-size: 2rem;
+	margin-left: 6rem;
+}
+
+
+/* below is the skills section */
+
+.sc-skills-container {
+	background-color: #FFFFFF;
+	display: flex;
+	margin: 2rem 4rem;
+	padding: 2rem 2rem;
+}
+
+.sc-skills-grid {
+	display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 2rem;
+  flex-grow: 1;
+  justify-content: center;
+	align-items: center;
+}
+
+.pr-skills-card {
+	width: 200px;
+	height: 150px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 1rem;
+	background-color: ghostwhite;
+	border-radius: 8px 8px 50px 8px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+
+
+.sc-skills-card h5 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 0;
+}
+
+/* below is the projects section */
+
+.sc-projects-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem 4rem;
+	padding: 0 2rem;
+  opacity: 0;
+}
+
+.sc-project-card {
+	height: 300px;
+	width:  100%;
+	background-color: ghostwhite;
+	display: flex;
+	margin: 1rem;
+	border-radius: 8px 8px 50px 8px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  transform: translateY(100px);
+}
+
+.pro-appear{
+  opacity: 1;
+  transform: translateY(-100px);
+  transition: 1.5s all ease-in-out;
+}
+
+.sc-project-card-body {
+	font-family: 'Open Sans', sans-serif;
+	padding:  1rem;
+	height: 100%;
+	width: 60%;
+
+}
+
+.sc-project-card-img {
+	width:  550px;
+	height: 300px;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 8px;
+}
+
+
+/* below is the experience section */
+.sc-cont-header-exp {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: slategray;
+  font-size: 2rem;
+  margin-left: 6rem;
+  padding-top: 100px;
+}
+
+.sc-exp-container {
+	display: flex;
+	margin: 2rem 4rem;
+	padding: 2rem 2rem;
+}
+
+.sc-exp-grid	{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 500px);
+  grid-gap: 2rem;
+  flex-grow: 1;
+  justify-content: space-between;
+	align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s all ease-in-out;
+}
+
+.exp-appear{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+ .sc-exp-card {
+ 	height: 350px;
+ 	width: 500px;
+ 	background-color: ghostwhite;
+ 	border-radius: 8px 8px 50px 8px;
+ 	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+ }
+
+.sc-exp-card-img {
+	height: 100px;
+	padding:  1rem;
+	text-align: center;
+}
+
+.sc-exp-card-body {
+	padding: 2rem;
+	line-height: 1.6;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.sc-exp-card-body h2, h3, h4, p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.sc-exp-card-body-date {
+	font-style: italic;
+	color: slategray;
+	font-weight: 300;
+}
+
+/* below is the footer */
+
+ .sc-footer {
+ 	height: 350px;
+ 	background-color: #F5F5F5;
+ 	padding: 4rem 0 0 8rem;
+ }
+
+ .sc-footer h2, h5 {
+   font-family: 'Open Sans', sans-serif;
+   padding-top: 1rem;
+   margin-left: 2rem;
+ }
+
+ .sc-footer h5 {
+ 	color: slategray;
+ }
+
+/* size control on large screens */
+
+ @media screen and (min-width: 1440px) {
+  .sc-main-container {
+    width: 1438px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .sc-main-container {
+    width: 1438px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .sc-main-container {
+    width: 1438px;
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

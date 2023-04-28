@@ -1,0 +1,6 @@
+<%= simple_form_for([@user, @new_skill]) do |f| %>
+  <%= f.input :skill_name %>
+  <%= f.input :level %>
+  <%= f.input :years_of_experience %>
+  <%= f.submit "add skill", class: "btn" %>
+<% end %>

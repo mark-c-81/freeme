@@ -1,0 +1,253 @@
+// Specific CSS for your home-page
+:root{
+  --environment: rgba(248, 239, 208, 0.7);
+  --environment2: #6E8FBC;
+
+  --mainbackground: ghostwhite;
+
+}
+
+
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  background: white;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.get-started-btn {
+  font-size: 24px;
+  color: white;
+  background: #6E8FBC;
+  height: auto;
+  width: 80px;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.get-started-btn:hover {
+  color: white;
+  background-color: #0275d8;
+  text-decoration: none;
+}
+
+.site-btn {
+  color: white;
+  background: #6E8FBC;
+  height: auto;
+  width: 80px;
+  border: none;
+}
+
+.site-btn:hover {
+  color: white;
+  background-color: #0275d8;
+}
+
+.icon-btn {
+  color: #6E8FBC;
+  border: none;
+  background-color: transparent;
+}
+
+.icon-btn:hover {
+  color: #0275d8;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.container1 {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2em;
+  background: linear-gradient(180deg, rgba(248, 239, 208, 0), rgba(248, 239, 208, 0.8) 90% );
+}
+
+.first-img{
+  height: 550px;
+  position: relative;
+}
+
+.text1 {
+  color: #4C4C4C;
+  text-align: right;
+  font-size: 44px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.image{
+  flex-basis: 50%;
+  background-size: 500px;
+}
+
+
+.home-btn {
+  color: white;
+  font-size: 30px;
+  padding:10px;
+  background: #6E8FBC;
+  border-radius: 8px;
+}
+
+
+
+.pimg1{
+  background: image_url('manonbeachlaptop.png');
+  background-size: initial;
+  min-height: 80%;
+}
+
+.pimg2{
+  background: image_url('index_pimg1.jpg');
+  min-height: 600px;
+}
+
+.pimg3{
+  background-image: image_url('index_pimg2.jpg');
+  min-height: 600px;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext{
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 8px;
+}
+
+.border{
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+.ptext, .border, .trans{
+  background-color: transparent;
+  border: non;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment: scroll;
+  }
+}
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, var(--maincolor) 0%, var(--backgroundcolor) 100%);
+  color: var(--secondaryColor);
+}
+
+
+.inner-header {
+  height:200px;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.btn-txt-sm {
+  font-size: 12px;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+
+
+
+

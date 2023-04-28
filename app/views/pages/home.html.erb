@@ -1,0 +1,86 @@
+<%= render 'shared/navbar' %>
+
+
+
+
+  <div class="container1">
+    <div class="home-img-1">
+      <%= image_tag 'manonbeachlaptop.png', class: 'first-img' %>
+    </div>
+
+    <div class="text1">
+        <p class="landing-motto">Your launchpad for a rewarding <br>career in tech.</p>
+        <%= link_to 'Get Started', new_user_registration_path, class: 'get-started-btn' %>
+    </div>
+  </div>
+
+
+  <section class="section section-light">
+    <h2>Choose freedom, not stress!</h2>
+    <p>
+      Confused with where to start your freelance journey?
+      <br>
+      FreeMe helps you launch your freelance career quickly and easily!
+      <br>
+      Get started on creating your shareable profile 😎
+    </p>
+  </section>
+
+    <div class="pimg2">
+    </div>
+
+    <section class="section section-light">
+      <h2>Create your unique profile!</h2>
+      <p>
+        Share your beautiful profile with potential employers in minutes 👨🏻‍💻
+      <br>
+        Highlight your skills and experience, and showcase your unique projects 👨🏼‍🎨
+      </p>
+
+    </section>
+
+    <div class="pimg3">
+    </div>
+
+      <!--Hey! This is the original version
+of Simple CSS Waves-->
+
+      <div class="header">
+
+<!--Content before waves-->
+        <div class="inner-header">
+          <!--Just the logo.. Don't mind this-->
+          <br>
+          <h1 style="">FreeMe</h1>
+          <br>
+          <%= link_to 'Get Started', new_user_registration_path, class: 'get-started-btn' %>
+        </div>
+
+
+
+        <!--Waves Container-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--secondaryColor)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="var(--secondaryColor)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.7)" />
+        </g>
+        </svg>
+        </div>
+      <!--Waves end-->
+      </div>
+<!--Header ends-->
+
+<!--Content starts-->
+    <div class="content flex">
+      <%= render 'shared/navbar' %>
+
+    </div>
+<!--Content ends-->
+
